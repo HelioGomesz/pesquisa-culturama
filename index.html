@@ -12,7 +12,7 @@
     <section>
         <form action="" method="get">
 
-             <fieldset>
+            <fieldset>
                 <legend>Dados Pessoais</legend>
                 <label for="name">Nome</label>
                 <input id="name" name="userName" required>
@@ -34,7 +34,7 @@
                 <br>
             </fieldset> 
 
-           <fieldset>
+            <fieldset>
                 <legend>Perfil</legend>
                 
                 <p>Gênero:</p>
@@ -91,9 +91,9 @@
                 <label for="city">Cidade:</label>
                 <input id="city" name="userCity" >
 
-           </fieldset>
+            </fieldset>
 
-           <fieldset>
+            <fieldset>
             <legend>Hábitos</legend>
 
             <p>Redes Sociais:</p>
@@ -122,7 +122,24 @@
             <input id="favoriteColor" type="color" name="userFavoriteColor">
 
 
-           </fieldset>
+            </fieldset>
+
+            <fieldset>
+            <legend>Opinião</legend>
+            
+            <p>Informe o nível de satisfação:</p>
+            <input id="otimo" type="radio" name="userSatisfaction">
+            <label for="otimo">Ótimo</label>
+            <input id="boa" type="radio" name="userSatisfaction">
+            <label for="boa">Boa</label>
+            <input id="regular" type="radio" name="userSatisfaction">
+            <label for="regular">Regular</label>
+            <input id="ruim" type="radio" name="userSatisfaction">
+            <label for="ruim">Ruim</label>
+            <br>
+            <p>Deixe um comentário:</p>
+            <textarea name="userComment" rows="4" cols="60" placeholder="Escreva seu comentário aqui..."></textarea>
+            </fieldset>
             
             <button type="submit">Enviar</button>
 
