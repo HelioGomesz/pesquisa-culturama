@@ -34,10 +34,12 @@
                 <input id="email" name="userEmail" placeholder="E-mail" required>
                 <br>
                 <label for="phoneNumber">Telefone</label>
-                <input id="phoneNumber" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaço ou hífen">
+                <input type="tel" id="phoneNumber" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaço ou hífen" aria-describedby="phoneHelp">
+                <small id="phoneHelp">Preencha com 11 dígitos no formato: DDD + número sem espaço ou hífen</small>
                 <br>
                 <label for="image">Upload de Foto</label>
-                <input id="image" accept="image/*" name="userImage">
+                <input type="file" id="image" accept="image/*" name="userImage" aria-describedby="imageHelp">
+                <small id="imageHelp">Envie uma foto no formato PNG ou JPEG</small>
                 <br>
             </fieldset> 
 
@@ -116,8 +118,8 @@
             <input id="x" type="checkbox" name="social" value="x">
             <label for="x">X (Twitter)</label>
             <br>
-            <label for="musicStyle">Estilo Musical:</label>
-            <input list="styleTypes" name="userMusicStyle" type="text">
+            <label for="musicStyle" >Estilo Musical:</label>
+            <input id="musicStyle" list="styleTypes" name="userMusicStyle" type="text">
             <datalist id="styleTypes">
                 <option value="Rock"></option>
                 <option value="Pop"></option>
@@ -158,8 +160,8 @@
             <label for="getResult">Eu desejo receber os resultados da pesquisa por E-mail</label>
 
             </fieldset>
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
+            <button type="submit" aria-label="Enviar dados do formulário">Enviar</button>
+            <button type="reset" aria-label="Limpar dados do formulário">Limpar</button>
 
 
         </form>
